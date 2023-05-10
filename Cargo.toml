@@ -1,0 +1,15 @@
+[package]
+name = "fresh-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+color-eyre = "0.6.2"
+ignore = "0.4.20"
+libc = "0.2.143"
+seahash = "4.1.0"
+sqlx = { version = "0.6.3", features = ["postgres", 'runtime-tokio-rustls'] }
+tokio = { version = "1.28.0", features = ["full"] }
